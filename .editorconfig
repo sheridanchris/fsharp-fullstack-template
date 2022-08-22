@@ -1,0 +1,13 @@
+root = true
+
+[*]
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.{fs,fsx}]
+fsharp_single_argument_web_mode=true
+fsharp_multiline_block_brackets_on_same_column=true
+fsharp_experimental_stroustrup_style=true
