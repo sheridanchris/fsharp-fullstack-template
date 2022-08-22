@@ -2,3 +2,9 @@ source https://api.nuget.org/v3/index.json
 
 storage: none
 framework: net5.0, netstandard2.0, netstandard2.1
+nuget Fable.Remoting.Client 7.21.0
+nuget Fable.Remoting.Giraffe 5.12.0
+nuget Feliz 1.68.0
+nuget Feliz.DaisyUI 2.1.0
+nuget Feliz.UseElmish 1.6.0
+nuget Saturn 0.16.1
