@@ -603,7 +603,7 @@ FakesAssemblies/
 _Pvt_Extensions
 
 # Paket dependency manager
-.paket/paket.exe
+.paket/
 paket-files/
 
 # FAKE - F# Make
