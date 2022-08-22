@@ -29,7 +29,7 @@ module Counter =
     match msg with
     | Increment -> { state with Count = state.Count + 1 }, Cmd.none
     | Decrement -> { state with Count = state.Count - 1 }, Cmd.none
-    | ResetCount -> init ()
+    | ResetCount -> { state with Count = 0 }, Cmd.none
     | GotServerValue value -> { state with ServerValue = value }, Cmd.none
 
   [<ReactComponent>]
