@@ -1,0 +1,8 @@
+services:
+  webapp:
+    build: ./
+    ports:
+      - "8888:8888"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:8888;http://+:8888

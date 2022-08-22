@@ -9,8 +9,12 @@ let helloWorld () = async { return "Hello From Saturn!" }
 
 let serverApi: IServerApi = { GetValue = helloWorld }
 
+let routeBuilder (typeName: string) (methodName: string) =
+  sprintf "/api/%s/%s" typeName methodName
+
 let serverApiHandler: HttpHandler =
   Remoting.createApi ()
+  |> Remoting.withRouteBuilder routeBuilder
   |> Remoting.fromValue serverApi
   |> Remoting.buildHttpHandler
 
